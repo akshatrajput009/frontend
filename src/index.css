@@ -85,7 +85,56 @@ nav ul li h5 {
 
 /* component - home , section - welcome */
 
-.welcome {
+.subIntro {
+  margin-top: 84px;
+}
+
+.carousel {
+  position: relative;
+  height: 80vh;
+}
+
+.carousel-inner {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 80vh;
+}
+
+.carousel-indicators {
+  margin: auto;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #b47676;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #6d3939;
+}
+
+.carousel-v2 {
+  height: 100%;
+}
+.carousel-inner-v2 {
+  width: 100%;
+}
+
+.carousel-item-v2 img {
+  height: 100%;
+}
+
+/* .welcome {
   height: 500px;
   width: 100%;
   margin-top: 84px;
@@ -146,11 +195,7 @@ nav ul li h5 {
 .welcomePhoto .introPhotoGrid {
   width: 100%;
   height: 550px;
-}
-
-.intro {
-  height: 610px;
-}
+} */
 
 /* section - expertise */
 
@@ -191,17 +236,17 @@ nav ul li h5 {
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
-  top: 50%; /* Adjust this value to position the controls vertically */
+  top: 50%;
   transform: translateY(-50%);
-  z-index: 1; /* Ensure the controls are above the carousel content */
+  z-index: 1;
 }
 
 .carousel-control-prev {
-  left: 0; /* Adjust this value to position the previous control */
+  left: 0;
 }
 
 .carousel-control-next {
-  right: 0; /* Adjust this value to position the next control */
+  right: 0;
 }
 
 .carousel-control-prev-icon,
@@ -577,7 +622,20 @@ input[type="submit"]:hover {
   }
 
   /* component - home , section - welcome */
-  .intro {
+
+  .carousel {
+    height: 100%;
+  }
+
+  .carousel-inner {
+    width: 95%;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+
+  /* .intro {
     height: 100%;
 
     margin-bottom: 20px;
@@ -611,15 +669,16 @@ input[type="submit"]:hover {
   .welcomePhoto .introPhotoGrid {
     width: 100%;
     height: 100%;
-  }
+  } */
 
   /* section-expertise */
 
   .expertise {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100%;
     margin: 5px;
+    margin-top: 40px;
   }
 
   .expertisePhotos {
@@ -631,6 +690,25 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
+  .carousel-control-next-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-control-prev-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-control-next-icon:after {
+    font-size: 35px;
+  }
+  .carousel-control-prev-icon:after {
+    font-size: 35px;
+  }
+
   .expertisePhoto {
     width: 100%;
     height: 100%;
@@ -639,6 +717,7 @@ input[type="submit"]:hover {
   .expertiseDetails {
     width: 100%;
     padding: 20px;
+    margin-bottom: 40px;
   }
 
   .expertiseDetails p {

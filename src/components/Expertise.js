@@ -32,10 +32,10 @@ export const Expertise = () => {
           <div className="carousel-container">
             <div
               id="carouselExampleAutoplaying"
-              className="carousel slide expertiseCarousel"
+              className="carousel carousel-v2 slide expertiseCarousel"
               data-bs-ride="carousel"
             >
-              <div className="carousel-inner ">
+              <div className="carousel-inner carousel-inner-v2 ">
                 <div className=" carousel-item active">
                   <img
                     src={carouselImg.a}
@@ -43,7 +43,7 @@ export const Expertise = () => {
                     alt="..."
                   ></img>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item carousel-item-v2">
                   <img
                     src={carouselImg.b}
                     className="expertisePhoto d-block "
